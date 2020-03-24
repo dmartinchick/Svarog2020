@@ -1,8 +1,12 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB",
+    "mappings": "ACAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,MAAM;EAChC,AAAA,UAAU,CAAA;IACN,SAAS,EAAE,GAAG;IACd,MAAM,EAAE,IAAI;GACf;;;AAGL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAA;IACN,SAAS,EAAE,GAAG;IACd,MAAM,EAAE,IAAI;GACf;;;AAGL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAA;IACN,SAAS,EAAE,GAAG;IACd,MAAM,EAAE,IAAI;GACf;;;AAGL,MAAM,CAAC,MAAM,MAAM,SAAS,EAAE,KAAK;EAC/B,AAAA,UAAU,CAAA;IACN,SAAS,EAAE,GAAG;IACd,MAAM,EAAE,IAAI;GACf",
     "sources": [
-        "../scss/style.scss"
+        "../scss/style.scss",
+        "../scss/_grid.scss",
+        "../scss/section/_header.scss",
+        "../scss/section/_navbar.scss",
+        "../scss/section/_hero.scss"
     ],
     "names": [],
     "file": "style.css"

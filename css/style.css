@@ -4,4 +4,32 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    max-width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 85%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 90%;
+    margin: auto;
+  }
+}
 /*# sourceMappingURL=style.css.map */
