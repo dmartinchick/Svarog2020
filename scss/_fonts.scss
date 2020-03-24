@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Segoe UI Light';
+    src: url('../fonts/segoe/SegoeUI-Light.eot');
+    src: url('../fonts/segoe/SegoeUI-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/segoe/SegoeUI-Light.woff') format('woff'),
+    url('../fonts/segoe/SegoeUI-Light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Regular';
+    src: url('../fonts/segoe/SegoeUI.eot');
+    src: url('../fonts/segoe/SegoeUI.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/segoe/SegoeUI.woff') format('woff'),
+    url('../fonts/segoe/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold';
+    src: url('../fonts/segoe/SegoeUI-Bold.eot');
+    src: url('../fonts/segoe/SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/segoe/SegoeUI-Bold.woff') format('woff'),
+    url('../fonts/segoe/SegoeUI-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Balkara Free Condensed';
+    src: url('../fonts/Balkara/Balkara\ Free\ Condensed\ -\ npoekmu.me\ Regular.eot') format('eot'),
+    url('../fonts/Balkara/Balkara\ Free\ Condensed\ -\ npoekmu.me\ Regular.ttf') format('ttf'),
+    url('../fonts/Balkara/Balkara\ Free\ Condensed\ -\ npoekmu.me\ Regular.woff') format('woff');
+}
+
+@mixin segoe-light {
+    font-family: 'Segoe UI Light',sans-serif;
+}
+
+@mixin segoe-regular {
+    font-family: 'Segoe UI Regular',sans-serif;
+}
+
+@mixin segoe-bold {
+    font-family: 'Segoe UI Bold',sans-serif;
+}
+
+@mixin balkara {
+    font-family: 'Balkara Free Condensed';
+}

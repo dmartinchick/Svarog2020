@@ -1,6 +1,21 @@
-//настройки сетки
+//базовые настройки сетки
 @import 'grid';
 
+//цвета
+@import 'colors';
 
-//блок header
-@import 'section/header';
+//настройки шрифтов
+@import 'fonts';
+
+// настройки интерфейса
+@import 'interface';
+
+//главная страница
+@import '../scss/sections/header';
+.header{
+    height: 100vh;
+    position: relative;
+}
+
+//адаптив
+@import 'media';
