@@ -32,4 +32,210 @@
     margin: auto;
   }
 }
+
+@font-face {
+  font-family: 'Segoe UI Light';
+  src: url("../fonts/segoe/SegoeUI-Light.eot");
+  src: url("../fonts/segoe/SegoeUI-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe/SegoeUI-Light.woff") format("woff"), url("../fonts/segoe/SegoeUI-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Regular';
+  src: url("../fonts/segoe/SegoeUI.eot");
+  src: url("../fonts/segoe/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe/SegoeUI.woff") format("woff"), url("../fonts/segoe/SegoeUI.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Segoe UI Bold';
+  src: url("../fonts/segoe/SegoeUI-Bold.eot");
+  src: url("../fonts/segoe/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe/SegoeUI-Bold.woff") format("woff"), url("../fonts/segoe/SegoeUI-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Balkara Free Condensed';
+  src: url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.eot") format("eot"), url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.ttf") format("ttf"), url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.woff") format("woff");
+}
+
+body {
+  font-family: 'Segoe UI Regular',sans-serif;
+  background-color: #F4F6F0;
+  font-size: 10px;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+}
+
+.navbar {
+  height: 6em;
+  background-color: rgba(244, 246, 240, 0.75);
+  border-bottom: 1px solid #707070;
+}
+
+.navbar-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: inherit;
+}
+
+.navbar-logo {
+  display: block;
+  -webkit-filter: drop-shadow(5px 5px 10px rgba(72, 85, 80, 0.5));
+          filter: drop-shadow(5px 5px 10px rgba(72, 85, 80, 0.5));
+  cursor: pointer;
+}
+
+.navbar-logo .logo-wrap {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 80%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 80%, 0 100%);
+  background: #C0E86A;
+  padding: 10px 10px 45px 10px;
+}
+
+.navbar-logo .logo-wrap .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-logo .logo-wrap .logo__img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.navbar-logo .logo-wrap .logo__text {
+  font-family: 'Balkara Free Condensed';
+  font-size: 3.2em;
+}
+
+.navbar-logo .logo-wrap .logo__text span {
+  font-family: 'Segoe UI Light',sans-serif;
+  font-size: 1.3em;
+  font-weight: 300;
+}
+
+.navbar-menu {
+  display: block;
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-menu__list {
+  display: block;
+}
+
+.navbar-menu__item {
+  display: inline-block;
+  list-style: none;
+  margin-right: 5em;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-menu__item:last-child {
+  margin-right: 0;
+}
+
+.navbar-menu__item a {
+  position: relative;
+  text-decoration: none;
+  font-size: 1.6em;
+  color: #000;
+}
+
+.navbar-menu__item a::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 1.5px;
+  width: 0;
+  background-color: #485550;
+  margin-top: 0.25em;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.navbar-menu__item a:hover::after {
+  width: 100%;
+}
+
+.navbar-menu__item a.active::after {
+  position: absolute;
+  display: block;
+  content: '';
+  height: 1.5px;
+  width: 100%;
+  background-color: #485550;
+  margin-top: 0.25em;
+}
+
+.navbar-button {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.navbar-button__link {
+  cursor: pointer;
+  height: 1.5em;
+  width: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.navbar-button__link:hover span:nth-child(3) {
+  width: 100%;
+}
+
+.navbar-button__link span {
+  display: block;
+  height: 1.8px;
+  width: 100%;
+  background-color: #485550;
+}
+
+.navbar-button__link span:nth-child(3) {
+  width: 50%;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
 /*# sourceMappingURL=style.css.map */

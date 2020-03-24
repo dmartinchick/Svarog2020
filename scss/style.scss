@@ -11,11 +11,7 @@
 @import 'interface';
 
 //главная страница
-@import '../scss/sections/header';
-.header{
-    height: 100vh;
-    position: relative;
-}
+@import 'section/header';
 
 //адаптив
 @import 'media';
