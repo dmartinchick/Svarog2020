@@ -40,4 +40,15 @@
         }
 
     }
+
+    &-bg{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-40%);
+        right: 0;
+        &__img{
+            max-width: 70vw;
+            height: auto;
+        }
+    }
 }
