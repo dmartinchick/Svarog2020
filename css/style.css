@@ -71,6 +71,7 @@ body {
 .header {
   height: 100vh;
   position: relative;
+  background: #F4F6F0;
 }
 
 .navbar {
@@ -237,5 +238,61 @@ body {
   width: 50%;
   -webkit-transition: 0.2s ease-in-out;
   transition: 0.2s ease-in-out;
+}
+
+.hero {
+  display: block;
+  position: relative;
+  top: 50vh;
+}
+
+.hero-wrap {
+  width: 15em;
+  margin-left: 1.5em;
+}
+
+.hero-text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.hero-text__title {
+  display: block;
+  position: relative;
+}
+
+.hero-text__title::before {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 1.5px;
+  height: 100%;
+  background-color: #485550;
+  margin-left: -10px;
+}
+
+.hero-text__title h1 {
+  margin: 0;
+}
+
+.hero-text__subtitle {
+  font-size: 1.4em;
+  font-family: 'Segoe UI Light',sans-serif;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */
