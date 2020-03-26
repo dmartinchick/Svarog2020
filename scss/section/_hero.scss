@@ -11,6 +11,9 @@
         position: relative;
         display: flex;
         flex-direction: row-reverse;
+        //настройки анимации
+        animation-name: showLeft;
+        animation-duration: 1s;
 
         &__title{
             display: block;
@@ -21,9 +24,14 @@
                 display: block;
                 content: '';
                 width: 1.5px;
-                height: 100%;
+                height: 0;//сброшено до 0, для анимации
                 background-color: $dark-strong;
                 margin-left: -10px;
+                //настройки анимации
+                animation-name: showBottomLine;
+                animation-duration: 0.5s;
+                animation-delay: 1.05s;
+                animation-fill-mode: both;
             }
 
             h1{
@@ -37,6 +45,12 @@
             transform-origin: left;
             transform: rotate(180deg);
             align-self: center;
+            //настройки анимации
+            opacity: 0; //сброс для анимации
+            animation-name: fadeIn;
+            animation-duration:1s;
+            animation-delay:1.5s;
+            animation-fill-mode:both;
         }
 
     }
@@ -46,6 +60,13 @@
         top: 50%;
         transform: translateY(-40%);
         right: 0;
+        //настройки анимации
+        opacity: 0; //сброс для анимации
+        animation-name: fadeIn;
+        animation-duration: 1s;
+        animation-delay: 2s;
+        animation-fill-mode: both;
+
         &__img{
             max-width: 70vw;
             height: auto;
