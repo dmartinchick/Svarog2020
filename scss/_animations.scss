@@ -24,3 +24,12 @@
         height: 100%;
     }
 }
+
+@keyframes showRightOnLeft{
+    0%{
+        transform: translateX(700px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
