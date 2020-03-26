@@ -72,6 +72,7 @@ body {
   height: 100vh;
   position: relative;
   background: #F4F6F0;
+  background-image: url("https://www.transparenttextures.com/patterns/light-paper-fibers.png");
 }
 
 .navbar {
@@ -80,6 +81,7 @@ body {
   height: 6em;
   background-color: rgba(244, 246, 240, 0.75);
   border-bottom: 1px solid #707070;
+  z-index: 1;
 }
 
 .navbar-wrap {
@@ -388,8 +390,8 @@ body {
 }
 
 .hero-bg__img {
-  max-width: 70vw;
-  height: auto;
+  max-height: 100vh;
+  width: auto;
 }
 
 @-webkit-keyframes fadeIn {

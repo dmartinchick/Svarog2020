@@ -4,6 +4,7 @@
     height: 6em;
     background-color: rgba($bg,0.75);
     border-bottom: 1px solid $dark-light;
+    z-index: 1;
 
     &-wrap{
         display: flex;
