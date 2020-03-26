@@ -14,6 +14,9 @@
         //настройки анимации
         animation-name: showLeft;
         animation-duration: 1s;
+        animation-delay:0.5s;
+        transform: translateX(-500px);//смещение для анимации
+        animation-fill-mode:both;
 
         &__title{
             display: block;
@@ -30,7 +33,7 @@
                 //настройки анимации
                 animation-name: showBottomLine;
                 animation-duration: 0.5s;
-                animation-delay: 1.05s;
+                animation-delay: 1.55s;
                 animation-fill-mode: both;
             }
 
@@ -49,7 +52,7 @@
             opacity: 0; //сброс для анимации
             animation-name: fadeIn;
             animation-duration:1s;
-            animation-delay:1.5s;
+            animation-delay:2s;
             animation-fill-mode:both;
         }
 
@@ -64,7 +67,7 @@
         opacity: 0; //сброс для анимации
         animation-name: fadeIn;
         animation-duration: 1s;
-        animation-delay: 2s;
+        animation-delay: 2.3s;
         animation-fill-mode: both;
 
         &__img{
