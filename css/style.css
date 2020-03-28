@@ -34,36 +34,36 @@
 }
 
 @font-face {
-  font-family: 'Segoe UI Light';
-  src: url("../fonts/segoe/SegoeUI-Light.eot");
-  src: url("../fonts/segoe/SegoeUI-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe/SegoeUI-Light.woff") format("woff"), url("../fonts/segoe/SegoeUI-Light.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI Regular';
-  src: url("../fonts/segoe/SegoeUI.eot");
-  src: url("../fonts/segoe/SegoeUI.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe/SegoeUI.woff") format("woff"), url("../fonts/segoe/SegoeUI.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Segoe UI Bold';
-  src: url("../fonts/segoe/SegoeUI-Bold.eot");
-  src: url("../fonts/segoe/SegoeUI-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/segoe/SegoeUI-Bold.woff") format("woff"), url("../fonts/segoe/SegoeUI-Bold.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'Balkara Free Condensed';
   src: url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.eot") format("eot"), url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.ttf") format("ttf"), url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.woff") format("woff");
 }
 
+@font-face {
+  font-family: 'Helvetica Neue Cyr Roman';
+  src: url("../fonts/Helvetica/regular/HelveticaNeueCyr-Roman.eot");
+  src: url("../fonts/Helvetica/regular/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/regular/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/Helvetica/regular/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr Light';
+  src: url("../fonts/Helvetica/light/HelveticaNeueCyr-Light.eot");
+  src: url("../fonts/Helvetica/light/HelveticaNeueCyr-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/light/HelveticaNeueCyr-Light.woff") format("woff"), url("../fonts/Helvetica/light/HelveticaNeueCyr-Light.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr Bold';
+  src: url("../fonts/Helvetica/bold/HelveticaNeueCyr-Bold.eot");
+  src: url("../fonts/Helvetica/bold/HelveticaNeueCyr-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/bold/HelveticaNeueCyr-Bold.woff") format("woff"), url("../fonts/Helvetica/bold/HelveticaNeueCyr-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  font-family: 'Segoe UI Regular',sans-serif;
+  font-family: 'Helvetica Neue Cyr Roman', sans-serif;
   background-color: #F4F6F0;
   font-size: 10px;
 }
@@ -135,7 +135,7 @@ body {
 }
 
 .navbar-logo .logo-wrap .logo__text span {
-  font-family: 'Segoe UI Light',sans-serif;
+  font-family: 'Helvetica Neue Cyr Light',sans-serif;
   font-size: 1.3em;
   font-weight: 300;
 }
@@ -214,6 +214,7 @@ body {
 .navbar-menu__item a {
   position: relative;
   text-decoration: none;
+  font-family: 'Helvetica Neue Cyr Light',sans-serif;
   text-transform: uppercase;
   font-size: 1.6em;
   color: #000;
@@ -223,7 +224,7 @@ body {
   position: absolute;
   display: block;
   content: '';
-  height: 1.5px;
+  height: 1.3px;
   width: 0;
   background-color: #485550;
   margin-top: 0.25em;
@@ -239,7 +240,7 @@ body {
   position: absolute;
   display: block;
   content: '';
-  height: 1.5px;
+  height: 1.3px;
   width: 100%;
   background-color: #485550;
   margin-top: 0.25em;
@@ -293,6 +294,7 @@ body {
   display: block;
   position: relative;
   top: 50vh;
+  font-family: 'Helvetica Neue Cyr Bold', sans-serif;
 }
 
 .hero-wrap {
@@ -349,8 +351,8 @@ body {
 }
 
 .hero-text__subtitle {
-  font-size: 1.4em;
-  font-family: 'Segoe UI Light',sans-serif;
+  font-size: 1.2em;
+  font-family: 'Helvetica Neue Cyr Light',sans-serif;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;

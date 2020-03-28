@@ -2,6 +2,7 @@
     display: block;
     position: relative;
     top: 50vh;
+    @include Helvetica-bold;
 
     &-wrap{
         width: 15em;
@@ -42,8 +43,8 @@
             }
         }
         &__subtitle{
-            font-size: 1.4em;
-            @include segoe-light;
+            font-size: 1.2em;
+            @include Helvetica-light;
             writing-mode: vertical-lr;
             transform-origin: left;
             transform: rotate(180deg);
