@@ -394,8 +394,41 @@ body {
 }
 
 .hero-bg__img {
-  max-height: 100vh;
+  max-height: 80vh;
   width: auto;
+}
+
+.section-title {
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.section-title__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-title__name h3 {
+  font-family: 'Helvetica Neue Cyr Light',sans-serif;
+  font-size: 2em;
+  margin: 0 3em;
+}
+
+.section-title__name::before, .section-title__name::after {
+  display: block;
+  content: '';
+  height: 1px;
+  width: 100%;
+  background: #485550;
 }
 
 @-webkit-keyframes fadeIn {
