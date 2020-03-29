@@ -431,6 +431,21 @@ body {
   background: #485550;
 }
 
+.table-bg {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+  top: 125vh;
+}
+
+.table-bg__compass {
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  opacity: 0.5;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
