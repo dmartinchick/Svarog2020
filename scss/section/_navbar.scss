@@ -59,8 +59,28 @@
             display: inline-block;
             list-style: none;
             margin-right: 5em;
-            transition: 0.3s ease-in-out;
-            transform: translateX(700px);
+            position: relative;
+            transform: translateX(700px);//смещение для анимации
+                        
+            &::before{
+                cursor: pointer;
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0,-50%);
+                width: 0;
+                height: 200%;
+                background: url(../../img/other/btn-bg1.png);
+                background-size: cover;
+                transform-origin: left;
+                transition: 0.5s;
+                z-index: 0;
+            }
+            &:hover::before{
+                width: 110%;                
+            }
+
             &:nth-child(1){
                 animation-name: showRightOnLeft;
                 animation-duration: 0.5s;
@@ -87,7 +107,7 @@
             &:last-child{
                 margin-right: 0;
             }
-
+            
             a{
                 position: relative;
                 text-decoration: none;
@@ -95,28 +115,13 @@
                 text-transform: uppercase;
                 font-size: 1.6em;
                 color: #000;
-                &::after{
-                    position: absolute;
-                    display: block;
-                    content: '';
-                    height: 1.3px;
-                    width: 0;
-                    background-color: $dark-strong;
-                    margin-top: 0.25em;
-                    transition: 0.2s ease-in-out;
+                z-index: 1;
+                padding-left: 25px;
+
+                &:hover{
+                    color: $bg;
                 }
-                &:hover::after{
-                    width: 100%;
-                }
-                &.active::after{
-                    position: absolute;
-                    display: block;
-                    content: '';
-                    height: 1.3px;
-                    width: 100%;
-                    background-color: $dark-strong;
-                    margin-top: 0.25em;
-                }
+                
             }
         }
     }
