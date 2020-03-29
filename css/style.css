@@ -184,7 +184,7 @@ body {
 }
 
 .navbar-menu__item:hover::before {
-  width: 120%;
+  width: 110%;
 }
 
 .navbar-menu__item:nth-child(1) {
