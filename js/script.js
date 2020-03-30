@@ -11,9 +11,8 @@ $(document).ready(function () {
     //скролл флага
     $(window).scroll(function(){
         var scroll=$(window).scrollTop();
-        var logo=0-scroll;
         if (scroll<120){
-            $('.navbar-logo').css('transform','translateY('+ logo +'px)');//TO DO (разобраться как передать переменную в свойства])
+            $('.navbar-logo').css('transform','translateY('+ (-scroll) +'px)');//TO DO (разобраться как передать переменную в свойства])
         } else{
             $('.navbar-logo').css("transform","translateY(-120px)");
         }

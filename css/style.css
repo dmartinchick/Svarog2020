@@ -250,13 +250,9 @@ body {
 
 .navbar-button {
   height: inherit;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: none;
 }
 
 .navbar-button__link {
@@ -545,6 +541,29 @@ body {
   100% {
     -webkit-transform: scale(1);
             transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .navbar-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .navbar-button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar-menu {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

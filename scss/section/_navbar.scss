@@ -130,10 +130,8 @@
 
     &-button{
         height: inherit;
-        display: flex;
+        //display: flex;
         align-items: center;
-        //отключение видимости
-        display: none;
         &__link{
             cursor: pointer;
             height: 1.5em;
