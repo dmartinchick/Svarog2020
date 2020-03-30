@@ -2,8 +2,8 @@
     position: fixed;
     width: 100%;
     height: 6em;
-    background-color: rgba($bg,0.75);
-    border-bottom: 1px solid $dark-light;
+    background-color: rgba($bg,0.8);
+    //border-bottom: 1px solid $dark-light;
     z-index: 1;
 
     &-wrap{
@@ -17,11 +17,12 @@
         display: block;
         filter: drop-shadow(5px 5px 10px rgba($dark-strong,0.5));
         cursor: pointer;
+        //transform: translateY(-120px);
 
         .logo-wrap{
             clip-path: polygon(0 0, 100% 0, 100% 100%, 49% 80%, 0 100%);
             background: $lime;
-            padding: 10px 10px 45px 10px;
+            padding: 10px 10px 65px 10px;
 
             .logo{
                 display: flex;
@@ -35,6 +36,7 @@
                 &__text{
                     @include balkara;
                     font-size: 3.2em;
+                    margin-top: 20px;
                     span{
                         @include Helvetica-light;
                         font-size: 1.3em;
