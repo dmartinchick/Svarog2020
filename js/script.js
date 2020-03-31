@@ -17,4 +17,9 @@ $(document).ready(function () {
             $('.navbar-logo').css("transform","translateY(-120px)");
         }
     });
+
+    //перключатель navbar-button
+    $('.navbar-button').click(function(){
+        $('.navbar-button__link').toggleClass('open');
+    });
 });

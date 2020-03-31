@@ -249,43 +249,87 @@ body {
 }
 
 .navbar-button {
-  height: inherit;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar-button__link {
-  cursor: pointer;
-  height: 1.5em;
-  width: 2em;
+  height: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
-.navbar-button__link:hover span:nth-child(3) {
-  width: 100%;
+.navbar-button__text {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue Cyr Light',sans-serif;
+  color: #485550;
+  font-size: 1.6em;
+  margin-right: 1em;
+}
+
+.navbar-button__link {
+  width: 2em;
+  height: 1.6em;
+  position: relative;
+  display: inline-block;
 }
 
 .navbar-button__link span {
-  display: block;
-  height: 1.8px;
-  width: 100%;
   background-color: #485550;
+  position: absolute;
+  border-radius: 1px;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  width: 100%;
+  height: 2px;
+}
+
+.navbar-button__link span:nth-child(1) {
+  top: 0;
+  left: 0;
+}
+
+.navbar-button__link span:nth-child(2) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  opacity: 1;
 }
 
 .navbar-button__link span:nth-child(3) {
+  bottom: 0;
+  right: 0;
   width: 50%;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+}
+
+.navbar-button__link.open span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  top: 50%;
+}
+
+.navbar-button__link.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-button__link.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  width: 100%;
+  top: 50%;
+}
+
+.navbar-button:hover .navbar-button__link span:nth-child(3) {
+  width: 100%;
 }
 
 .hero {

@@ -129,32 +129,77 @@
     }
 
     &-button{
-        height: inherit;
-        //display: flex;
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: row;
         align-items: center;
+        cursor: pointer;
+        transition: 0.2s ease-in-out;
+        
+        &__text{
+            text-decoration: none;
+            text-transform: uppercase;
+            @include Helvetica-light;
+            color: $dark-strong;
+            font-size: 1.6em;
+            margin-right: 1em;
+        }
+
         &__link{
-            cursor: pointer;
-            height: 1.5em;
             width: 2em;
-            display: flex;
-            flex-wrap: wrap;
-            align-content:space-between;
-            justify-content:flex-end;
-            &:hover{
-                span:nth-child(3){
-                    width: 100%;
-                }
-            }
+            height: 1.6em;
+            position: relative;
+            display: inline-block;
 
             span{
-                display: block;
-                height: 1.8px;
-                width: 100%;
                 background-color: $dark-strong;
+                position: absolute;
+                border-radius: 1px;
+                transition: 0.3s ease-in-out;
+                width: 100%;
+                height: 2px;
 
+                &:nth-child(1){
+                    top: 0;
+                    left: 0;
+                }
+                &:nth-child(2){
+                    top: 50%;
+                    transform: translateY(-50%);
+                    left: 0;
+                    opacity: 1;
+                }
                 &:nth-child(3){
+                    bottom: 0;
+                    right: 0;
                     width: 50%;
-                    transition: 0.2s ease-in-out;
+                }
+            }
+        }
+        &__link.open{
+            span{
+                &:nth-child(1){
+                    transform: rotate(45deg);
+                    top: 50%;
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:nth-child(3){
+                    transform: rotate(-45deg);
+                    width: 100%;
+                    top: 50%;
+                }
+            }
+        }
+        //эффект при наведении на кнопку меню
+        &:hover{
+            .navbar-button__link{
+                span{
+                    &:nth-child(3){
+                        width: 100%;
+                    }
                 }
             }
         }
