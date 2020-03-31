@@ -19,6 +19,32 @@
     }
 }
 
+//изменение растоновки hero
+@media screen and (max-width: 860px){
+    .hero{
+        height: 50%;
+        top: 30em;
+        &-text{
+            width: 50%;
+            position: absolute;
+            flex-direction: column;
+
+            &__subtitle{
+                writing-mode: horizontal-tb;
+                transform: rotate(0);
+                align-self: start;
+                margin-top: 1em;
+            }
+        }
+        &-bg{
+            transform: translateY(-25%);
+            &__img{
+                max-height: 50vh;
+            }
+        }
+    }
+}
+
 @media screen and(max-width: 600px){
     //
 }
