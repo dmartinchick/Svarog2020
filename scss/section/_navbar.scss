@@ -151,10 +151,11 @@
                 height: 1.8px;
                 width: 100%;
                 background-color: $dark-strong;
-            }
-            span:nth-child(3){
-                width: 50%;
-                transition: 0.2s ease-in-out;
+
+                &:nth-child(3){
+                    width: 50%;
+                    transition: 0.2s ease-in-out;
+                }
             }
         }
     }
