@@ -76,7 +76,7 @@
                 background: url(../../img/other/btn-bg1.png);
                 background-size: cover;
                 transform-origin: left;
-                transition: 0.5s;
+                transition: 0.3s ease-in-out;
                 z-index: 0;
             }
             &:hover::before{
