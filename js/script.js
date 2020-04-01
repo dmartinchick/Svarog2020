@@ -51,7 +51,7 @@ $(document).ready(function () {
 		}, delay);
     });
     //close modal window
-	modalWindow.on('click', '.modal-close', function(event){
+	modalWindow.on('click','.modal-close', function(event){
 		event.preventDefault();
 		transitionLayer.addClass('closing');
 		modalWindow.removeClass('visible');
