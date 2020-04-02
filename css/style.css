@@ -277,7 +277,7 @@ body {
 
 .navbar-button__link {
   width: 2em;
-  height: 1.6em;
+  height: 1.5em;
   position: relative;
   display: inline-block;
 }
@@ -443,8 +443,8 @@ body {
   top: 0;
   left: 0;
   z-index: 3;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   overflow: hidden;
   background: #402f44 url(../../img/other/ink/modal-bg.jpg) no-repeat center center;
   background-size: cover;
@@ -454,41 +454,72 @@ body {
           transform: transition(opacity 0.3s 0s, visibility 0s 0.3s);
 }
 
-.cd-modal .modal-conent {
+.cd-modal .modal-content {
   height: 100%;
-  overflow-y: auto;
-  padding: 3em 5%;
-  color: #e4dcca;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.cd-modal .modal-close {
-  /* 'X' icon */
-  position: absolute;
-  z-index: 1;
-  top: 20px;
-  right: 5%;
-  height: 45px;
-  width: 45px;
-  border-radius: 50%;
-  background: rgba(0, 0, 0, 0.3) url(../img/cd-icon-close.svg) no-repeat center center;
-  /* image replacement */
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transform: scale(0);
-          transform: scale(0);
-  -webkit-transition: visibility 0s .3s,  opacity .3s 0s,  -webkit-transform .3s 0s;
-  transition: visibility 0s .3s,  opacity .3s 0s,  -webkit-transform .3s 0s;
-  transition: transform .3s 0s,  visibility 0s .3s,  opacity .3s 0s;
-  transition: transform .3s 0s,  visibility 0s .3s,  opacity .3s 0s,  -webkit-transform .3s 0s;
+.cd-modal .modal-close-wrap {
+  position: relative;
+  width: 100%;
+  height: 6em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.no-touch .cd-modal .modal-close:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+.cd-modal .modal-close-wrap .modal-close {
+  display: block;
+}
+
+.cd-modal .modal-close-wrap .modal-close .navbar-button__text {
+  color: #F4F6F0;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.cd-modal .modal-close-wrap .modal-close .navbar-button__link span {
+  width: 100%;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #F4F6F0;
+}
+
+.cd-modal .modal-close-wrap .modal-close .navbar-button__link span:nth-child(1) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.cd-modal .modal-close-wrap .modal-close .navbar-button__link span:nth-child(2) {
+  display: none;
+}
+
+.cd-modal .modal-close-wrap .modal-close .navbar-button__link span:nth-child(3) {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .cd-modal.visible {
@@ -498,7 +529,7 @@ body {
   transition: opacity .7s,  visibility 0s;
 }
 
-.cd-modal.visible .modal-cloe {
+.cd-modal.visible .modal-close {
   visibility: visible;
   opacity: 1;
   z-index: 5;
@@ -506,10 +537,6 @@ body {
   transition: visibility 0s 0s, opacity 0.3s 0s, -webkit-transform 0.3s 0s, -webkit-transform scale(1);
   transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s, transform scale(1);
   transition: transform 0.3s 0s, visibility 0s 0s, opacity 0.3s 0s, transform scale(1), -webkit-transform 0.3s 0s, -webkit-transform scale(1);
-}
-
-.cd-modal.visible .modal-cloe h2 {
-  color: #F4F6F0;
 }
 
 .cd-transition-layer {
