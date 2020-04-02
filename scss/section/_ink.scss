@@ -14,13 +14,69 @@
     transform: transition(opacity .3s 0s, visibility 0s .3s);
 
     .modal-content{
-        height: 100%;
+        height: 80vh;
         position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        
+        .modal-logo{
+            transform: scale(.75);
+            transform-origin: top;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__text{
+                @include balkara;
+                color: $bg;
+                font-size: 1.75em;
+
+                h1{
+                    margin: 0;
+                    span{
+                        @include Helvetica-ulight;
+                        font-size: 1.5em;
+                        color: $lime;
+                    }
+                }
+            }
+            &::after{
+                content: '';
+                display: block;
+                height: 1px;
+                width: 100%;
+                background-color: $bg;
+                margin-top: 2.5em;
+            }
+        }
+        .modal-menu{
+            //margin-top: 2em;
+            //height: 30vh;
+            &__list{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            &__item{
+                list-style: none;
+                margin-top: 2.5em;
+                a{
+                    text-decoration: none;
+                    color: $bg;
+                    font-size: 2em;
+                    text-transform: uppercase;
+                    @include Helvetica-light;
+
+                    &:hover{
+                        color: $lime;
+                    }
+                }
+                &:nth-child(1){
+                    margin-top: 0;
+                }
+            }
+        }
+
     }
     
     .modal-close-wrap{

@@ -3,10 +3,11 @@
     src: url('../fonts/Balkara/Balkara\ Free\ Condensed\ -\ npoekmu.me\ Regular.eot') format('eot'),
     url('../fonts/Balkara/Balkara\ Free\ Condensed\ -\ npoekmu.me\ Regular.ttf') format('ttf'),
     url('../fonts/Balkara/Balkara\ Free\ Condensed\ -\ npoekmu.me\ Regular.woff') format('woff');
+    font-weight: normal;
 }
 
 @mixin balkara {
-    font-family: 'Balkara Free Condensed';
+    font-family: 'Balkara Free Condensed',serif;
 }
 
 @font-face {
@@ -18,6 +19,15 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Helvetica Neue Cyr Ultra Light';
+    src: url('../fonts/Helvetica/ultra-light/HelveticaNeueCyr-UltraLight.eot');
+    src: url('../fonts/Helvetica/ultra-light/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Helvetica/ultra-light/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+    url('../fonts/Helvetica/ultra-light/HelveticaNeueCyr-UltraLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
 @font-face {
     font-family: 'Helvetica Neue Cyr Light';
     src: url('../fonts/Helvetica/light/HelveticaNeueCyr-Light.eot');
@@ -36,11 +46,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @mixin Helvetica-regular{
     font-family: 'Helvetica Neue Cyr Roman', sans-serif;
 }
 @mixin Helvetica-light {
     font-family: 'Helvetica Neue Cyr Light',sans-serif;
+}
+@mixin Helvetica-ulight {
+    font-family: 'Helvetica Neue Cyr Ultra Light',sans-serif;
 }
 @mixin Helvetica-bold {
     font-family: 'Helvetica Neue Cyr Bold', sans-serif;

@@ -36,12 +36,21 @@
 @font-face {
   font-family: 'Balkara Free Condensed';
   src: url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.eot") format("eot"), url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.ttf") format("ttf"), url("../fonts/Balkara/Balkara Free Condensed - npoekmu.me Regular.woff") format("woff");
+  font-weight: normal;
 }
 
 @font-face {
   font-family: 'Helvetica Neue Cyr Roman';
   src: url("../fonts/Helvetica/regular/HelveticaNeueCyr-Roman.eot");
   src: url("../fonts/Helvetica/regular/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/regular/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/Helvetica/regular/HelveticaNeueCyr-Roman.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Helvetica Neue Cyr Ultra Light';
+  src: url("../fonts/Helvetica/ultra-light/HelveticaNeueCyr-UltraLight.eot");
+  src: url("../fonts/Helvetica/ultra-light/HelveticaNeueCyr-UltraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Helvetica/ultra-light/HelveticaNeueCyr-UltraLight.woff") format("woff"), url("../fonts/Helvetica/ultra-light/HelveticaNeueCyr-UltraLight.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -129,7 +138,7 @@ body {
 }
 
 .navbar-logo .logo-wrap .logo__text {
-  font-family: 'Balkara Free Condensed';
+  font-family: 'Balkara Free Condensed',serif;
   font-size: 3.2em;
   margin-top: 20px;
 }
@@ -455,7 +464,7 @@ body {
 }
 
 .cd-modal .modal-content {
-  height: 100%;
+  height: 80vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -467,6 +476,82 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.cd-modal .modal-content .modal-logo {
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cd-modal .modal-content .modal-logo__text {
+  font-family: 'Balkara Free Condensed',serif;
+  color: #F4F6F0;
+  font-size: 1.75em;
+}
+
+.cd-modal .modal-content .modal-logo__text h1 {
+  margin: 0;
+}
+
+.cd-modal .modal-content .modal-logo__text h1 span {
+  font-family: 'Helvetica Neue Cyr Ultra Light',sans-serif;
+  font-size: 1.5em;
+  color: #C0E86A;
+}
+
+.cd-modal .modal-content .modal-logo::after {
+  content: '';
+  display: block;
+  height: 1px;
+  width: 100%;
+  background-color: #F4F6F0;
+  margin-top: 2.5em;
+}
+
+.cd-modal .modal-content .modal-menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cd-modal .modal-content .modal-menu__item {
+  list-style: none;
+  margin-top: 2.5em;
+}
+
+.cd-modal .modal-content .modal-menu__item a {
+  text-decoration: none;
+  color: #F4F6F0;
+  font-size: 2em;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue Cyr Light',sans-serif;
+}
+
+.cd-modal .modal-content .modal-menu__item a:hover {
+  color: #C0E86A;
+}
+
+.cd-modal .modal-content .modal-menu__item:nth-child(1) {
+  margin-top: 0;
 }
 
 .cd-modal .modal-close-wrap {
