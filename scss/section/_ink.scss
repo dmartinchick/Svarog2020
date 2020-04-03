@@ -75,8 +75,10 @@
                     transition: .3s ease-in;
                     transform: rotate(5deg);
                 }
-                &.active::after{
-                    width: 140%;
+                &.active{
+                    a{
+                        color: $lime;
+                    }
                 }
                 &:hover::after{
                     width: 140%;

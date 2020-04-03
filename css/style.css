@@ -557,8 +557,8 @@ body {
           transform: rotate(5deg);
 }
 
-.cd-modal .modal-content .modal-menu__item.active::after {
-  width: 140%;
+.cd-modal .modal-content .modal-menu__item.active a {
+  color: #C0E86A;
 }
 
 .cd-modal .modal-content .modal-menu__item:hover::after {
