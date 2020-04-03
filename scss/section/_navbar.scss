@@ -54,33 +54,33 @@
         align-items: center;
 
         &__list{
-            display: block;
+            display: flex;
+            flex-direction: row;
         }
 
         &__item{
-            display: inline-block;
+            //display: inline;
             list-style: none;
             margin-right: 5em;
             position: relative;
             transform: translateX(700px);//смещение для анимации
                         
-            &::before{
+            &::after{
                 cursor: pointer;
                 content: '';
                 position: absolute;
                 left: 0;
-                top: 50%;
-                transform: translate(0,-50%);
+                top: 1.5em;
                 width: 0;
-                height: 200%;
-                background: url(../../img/other/btn-bg1.png);
+                height: 100%;
+                background: url(../../img/other/ink-separation-dark-strong.png);
                 background-size: cover;
                 transform-origin: left;
-                transition: 0.3s ease-in-out;
-                z-index: 0;
+                transition: 0.3s ease-in;
+                transform: rotate(5deg);
             }
-            &:hover::before{
-                width: 110%;                
+            &:hover::after{
+                width: 110%;
             }
 
             &:nth-child(1){
@@ -119,11 +119,6 @@
                 color: #000;
                 z-index: 1;
                 padding-left: 25px;
-
-                &:hover{
-                    color: $bg;
-                }
-                
             }
         }
     }
