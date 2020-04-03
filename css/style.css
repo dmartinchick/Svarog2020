@@ -785,6 +785,47 @@ body {
   opacity: 0.5;
 }
 
+.table-content {
+  background-color: #fff;
+  margin-top: 2em;
+  border: 1px solid #485550;
+}
+
+.table-content .accordion li {
+  list-style: none;
+}
+
+.table-content .accordion li .accordion-body.active {
+  display: initial;
+}
+
+.table-content .accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.6em;
+  border-bottom: 1px solid rgba(72, 85, 80, 0.5);
+  cursor: pointer;
+  padding: 0.5em 2em;
+}
+
+.table-content .accordion-header.active .accordion-header__dropdown {
+  -webkit-transform: scale(1, -1);
+          transform: scale(1, -1);
+}
+
+.table-content .accordion-body {
+  display: none;
+  padding: 1.5em;
+}
+
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;

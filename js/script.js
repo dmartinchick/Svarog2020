@@ -23,12 +23,7 @@ $(document).ready(function () {
             $('.navbar-logo').css("transform","translateY(-120px)");
         }
     });
-    /*
-    //перключатель navbar-button
-    $('.navbar-button').click(function(){
-        $('.navbar-button__link').toggleClass('open');
-    });*/
-
+    
     //ink меню
     //cache some jQuery objects
 	var modalTrigger = $('.cd-modal-trigger'),
@@ -85,5 +80,8 @@ $(document).ready(function () {
 		});
 
 		resize = false;
-	}
+    }
+    
+    //table
+    
 });
