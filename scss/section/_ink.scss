@@ -58,18 +58,35 @@
                 align-items: center;
             }
             &__item{
+                position: relative;
                 list-style: none;
-                margin-top: 2.5em;
+                margin-top: 3em;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: -20px;
+                    top: 1.4em;
+                    width: 0;
+                    height: 100%;
+                    background: url(../../img/other/ink/ink-separation.svg);
+                    background-size:cover;
+                    color: $lime;
+                    transform-origin: left;
+                    transition: .3s ease-in;
+                    transform: rotate(5deg);
+                }
+                &.active::after{
+                    width: 140%;
+                }
+                &:hover::after{
+                    width: 140%;
+                }
                 a{
                     text-decoration: none;
                     color: $bg;
                     font-size: 2em;
                     text-transform: uppercase;
                     @include Helvetica-light;
-
-                    &:hover{
-                        color: $lime;
-                    }
                 }
                 &:nth-child(1){
                     margin-top: 0;
