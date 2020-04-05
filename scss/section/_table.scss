@@ -48,7 +48,7 @@
                     }
                 }
                 &.active + .accordion-body{
-                    height: 150px;
+                    height: 40em;
                 }
 
             }
@@ -59,6 +59,67 @@
                 transition: all 0.3s ease;
                 background: #fff;
                 overflow: hidden;
+
+                .tabs-wrap{
+                    margin: 1em 2em;
+                    display: flex;
+                    justify-content: center;
+
+                    table{
+                        width: 100%;
+                        height: auto;
+                        font-size: 1.2em;
+                        text-align: center;
+                        position: relative;
+                        border: 1xp solid $dark-strong;
+
+                        thead{
+                            
+                            th{
+                                padding-top: 0.5em;
+                                padding-bottom: .5em;
+                                border-right: .5px solid $dark-strong;
+                                
+                                &:last-child{
+                                    border-right: 0px;
+                                }
+                            }
+                        }
+
+                        tbody{
+                            tr{
+                                &:nth-child(odd){
+                                    background: $color-2;
+                                }
+                            }
+                            td{
+                                //border-right: .5px solid $dark-strong;
+                                padding: .25em .5em;
+                            }
+                        }
+
+                        .first,
+                        .second,
+                        .third{
+                            margin-right: 1em;
+                        }
+                        .first{
+                            color: $gold;
+                        }
+                        .second{
+                            color: $silver;
+                        }
+                        .third{
+                            color: $bronze;
+                        }
+                        .left{
+                            text-align: left;
+                        }
+                        .right{
+                            text-align: right;
+                        }
+                    }
+                }
             }
             
         }
