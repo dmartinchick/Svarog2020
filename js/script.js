@@ -85,10 +85,7 @@ $(document).ready(function () {
     //table
     $(".accordion-header").click(function (e) { 
 		e.preventDefault();
-		var select=$(this).attr("id");
-		//alert(select+".acc");
-		$(".active").removeClass("active");
-		$("#"+select+".accordion-body").addClass("active");
-		$("#"+select+".accordion-header").addClass("active");
+		$(".accordion-header").removeClass("active");
+		$(this).toggleClass("active");
 	});
 });

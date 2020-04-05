@@ -786,8 +786,60 @@ body {
 }
 
 .table-content {
-  background-color: #fff;
   margin-top: 2em;
+  z-index: 1;
+  border: 1px solid #707070;
+}
+
+.table-content .accordion-item {
+  list-style: none;
+  background-color: #fff;
+}
+
+.table-content .accordion-item .accordion-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px;
+  color: #485550;
+  position: relative;
+  cursor: pointer;
+  font-size: 1.6em;
+  border-top: 0.5px solid #707070;
+}
+
+.table-content .accordion-item .accordion-header__dropdown {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.table-content .accordion-item .accordion-header:hover, .table-content .accordion-item .accordion-header.active {
+  color: #000;
+}
+
+.table-content .accordion-item .accordion-header.active .accordion-header__dropdown {
+  -webkit-transform: scale(-1, -1);
+          transform: scale(-1, -1);
+}
+
+.table-content .accordion-item .accordion-header.active + .accordion-body {
+  height: 150px;
+}
+
+.table-content .accordion-item .accordion-body {
+  width: 100%;
+  height: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background: #fff;
+  overflow: hidden;
 }
 
 @-webkit-keyframes fadeIn {
