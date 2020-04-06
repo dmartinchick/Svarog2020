@@ -460,7 +460,654 @@
                         <!-- /.accordion-header__dropdown -->
                     </div>
                     <!-- /.accordion-header -->
-                    <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex temporibus ea illum obcaecati vero aliquam, ut odit! Consequatur odio accusamus modi quos! Vitae tempora, a consectetur ad architecto repellendus ea?</div>
+                    <div class="accordion-body">
+                        <div class="tabs-wrap">
+                            <ul class="tabs-name__list">
+                                <li class="tabs-name__items active">
+                                    <input id="tourism_total" type="radio" name="tabs" checked>
+                                    <label for="tourism_total">Итоговая</label>
+                                </li>
+                                <li class="tabs-name__items">
+                                    <input id="tourism_lane" type="radio" name="tabs">
+                                    <label for="tourism_lane">Велополоса</label>
+                                </li>
+                                <li class="tabs-name__items">
+                                    <input id="tourism_cycling" type="radio" name="tabs">
+                                    <label for="tourism_cycling">Вело-ориентирование</label>
+                                </li>
+                                <li class="tabs-name__items">
+                                    <input id="tourism_hiking_technology" type="radio" name="tabs">
+                                    <label for="tourism_hiking_technology">Техника пешеходного туризма</label>
+                                </li>
+                                <li class="tabs-name__items">
+                                    <input id="tourism_tourist_route" type="radio" name="tabs">
+                                    <label for="tourism_tourist_route">Туристический маршрут</label>
+                                </li>
+                            </ul>
+                            <!-- /.tabs__item -->
+                            <ul class="tabs-content__list">
+
+                                <!--Итоговая. Кубок туризма-->
+                                <li id="tourism_total" class="tabs-content__items">
+                                    <table>
+                                        <thead>
+                                           <tr>
+                                              <th>Место</th>
+                                              <th>Название команды</th>
+                                              <th>Вело-полоса </th>
+                                              <th>Вело-ориент.</th>
+                                              <th>Тех. пеш. туризма</th>
+                                              <th>Тур. маршрут</th>
+                                              <th class="right">Итого</th>
+                                           </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                              <td>1</td>
+                                              <td class="left"><i class="first fas fa-medal"></i>VOLAT «МЗКТ»</td>
+                                              <td>3/6</td>
+                                              <td>1/2</td>
+                                              <td>1/2</td>
+                                              <td>1/2</td>
+                                              <td class="right">12</td>
+                                           </tr>
+                                           <tr>
+                                              <td>2</td>
+                                              <td class="left"><i class="second fas fa-medal"></i>ОАО «MAЗ»</td>
+                                              <td>1/2</td>
+                                              <td>4/8</td>
+                                              <td>5/10</td>
+                                              <td>3/6</td>
+                                              <td class="right">26</td>
+                                           </tr>
+                                           <tr>
+                                              <td>3</td>
+                                              <td class="left"><i class="third fas fa-medal"></i>СТАЛЬ</td>
+                                              <td>5/10</td>
+                                              <td>2/4</td>
+                                              <td>3/6</td>
+                                              <td>5/10</td>
+                                              <td class="right">30</td>
+                                           </tr>
+                                           <tr>
+                                              <td>4</td>
+                                              <td class="left">ПРОКАТ</td>
+                                              <td>4/8</td>
+                                              <td>5/10</td>
+                                              <td>4/8</td>
+                                              <td>4/8</td>
+                                              <td class="right">34</td>
+                                           </tr>
+                                           <tr>
+                                              <td>5</td>
+                                              <td class="left">BY.CORD</td>
+                                              <td>6/12</td>
+                                              <td>3/6</td>
+                                              <td>9/18</td>
+                                              <td>8/16</td>
+                                              <td class="right">52</td>
+                                           </tr>
+                                           <tr>
+                                              <td>6</td>
+                                              <td class="left">ОАО «Белвторчермет»</td>
+                                              <td>2/4</td>
+                                              <td>10/20</td>
+                                              <td>8/16</td>
+                                              <td>9/18</td>
+                                              <td class="right">58</td>
+                                           </tr>
+                                           <tr>
+                                              <td>7</td>
+                                              <td class="left">ОАО «МПЗ»</td>
+                                              <td>11/22</td>
+                                              <td>11/22</td>
+                                              <td>6/12</td>
+                                              <td>2/4</td>
+                                              <td class="right">60</td>
+                                           </tr>
+                                           <tr>
+                                              <td>8</td>
+                                              <td class="left">EMERGENCY вспомогательные цеха </td>
+                                              <td>7/14</td>
+                                              <td>8/16</td>
+                                              <td>10/20</td>
+                                              <td>7/14</td>
+                                              <td class="right">64</td>
+                                           </tr>
+                                           <tr>
+                                              <td>9</td>
+                                              <td class="left">Сборная унитарных предприятий «РАЗАМ!»</td>
+                                              <td>12/24</td>
+                                              <td>9/18</td>
+                                              <td>2/4</td>
+                                              <td>10/20</td>
+                                              <td class="right">66</td>
+                                           </tr>
+                                           <tr>
+                                              <td>10</td>
+                                              <td class="left">ЗУБРЫ заводоуправление</td>
+                                              <td>15/30</td>
+                                              <td>6/12</td>
+                                              <td>7/14</td>
+                                              <td>6/12</td>
+                                              <td class="right">68</td>
+                                           </tr>
+                                           <tr>
+                                              <td>11</td>
+                                              <td class="left">ОАО «МОГИЛЕВЛИФТМАШ»</td>
+                                              <td>9/18</td>
+                                              <td>7/14</td>
+                                              <td>15/30</td>
+                                              <td>12/24</td>
+                                              <td class="right">86</td>
+                                           </tr>
+                                           <tr>
+                                              <td>12</td>
+                                              <td class="left">ОАО «РМЗ»</td>
+                                              <td>10/20</td>
+                                              <td>13/26</td>
+                                              <td>11/22</td>
+                                              <td>11/22</td>
+                                              <td class="right">90</td>
+                                           </tr>
+                                           <tr>
+                                              <td>13</td>
+                                              <td class="left">ГКС+Металлургтранс</td>
+                                              <td>8/16</td>
+                                              <td>14/28</td>
+                                              <td>15/30</td>
+                                              <td>13/26</td>
+                                              <td class="right">100</td>
+                                           </tr>
+                                           <tr>
+                                              <td>14</td>
+                                              <td class="left">ОАО «MМЗ»</td>
+                                              <td>14/28</td>
+                                              <td>12/24</td>
+                                              <td>15/30</td>
+                                              <td>14/28</td>
+                                              <td class="right">110</td>
+                                           </tr>
+                                           <tr>
+                                              <td>15</td>
+                                              <td class="left">ОАО «ПОЛЕСЬЕ-ЭЛЕКТРОМАШ</td>
+                                              <td>12/24</td>
+                                              <td>15/30</td>
+                                              <td>15/30</td>
+                                              <td>15/30</td>
+                                              <td class="right">114</td>
+                                           </tr>
+                                           <tr>
+                                              <td>16</td>
+                                              <td class="left">СИНИЕ ЯСТРЕБЫ «ЛЕГМАШ»</td>
+                                              <td>16/32</td>
+                                              <td>16/32</td>
+                                              <td>16/32</td>
+                                              <td>16/32</td>
+                                              <td class="right">128</td>
+                                           </tr>
+                                        </tbody>
+                                     </table>
+                                </li>
+
+                                <!--Велополоса-->
+                                <li id="tourism_lane" class="tabs-content__items">
+                                    <table>
+                                        <thead>
+                                           <tr>
+                                              <th>Место</th>
+                                              <th>Название команды</th>
+                                              <th>Порядок по жеребьевке</th>
+                                              <th class="right">Кол-во балов</th>
+                                           </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                              <td>1</td>
+                                              <td class="left"><i class="first fas fa-medal"></i>ОАО «MAЗ»</td>
+                                              <td>6</td>
+                                              <td class="right">2</td>
+                                           </tr>
+                                           <tr>
+                                              <td>2</td>
+                                              <td class="left"><i class="second fas fa-medal"></i>ОАО «Белвторчермет»
+                                              </td>
+                                              <td>3</td>
+                                              <td class="right">4</td>
+                                           </tr>
+                                           <tr>
+                                              <td>3</td>
+                                              <td class="left"><i class="third fas fa-medal"></i>VOLAT «МЗКТ»</td>
+                                              <td>5</td>
+                                              <td class="right">6</td>
+                                           </tr>
+                                           <tr>
+                                              <td>4</td>
+                                              <td class="left">ПРОКАТ</td>
+                                              <td>13</td>
+                                              <td class="right">8</td>
+                                           </tr>
+                                           <tr>
+                                              <td>5</td>
+                                              <td class="left">СТАЛЬ</td>
+                                              <td>12</td>
+                                              <td class="right">10</td>
+                                           </tr>
+                                           <tr>
+                                              <td>6</td>
+                                              <td class="left">BY.CORD</td>
+                                              <td>8</td>
+                                              <td class="right">12</td>
+                                           </tr>
+                                           <tr>
+                                              <td>7</td>
+                                              <td class="left">EMERGENCY вспомогательные цеха </td>
+                                              <td>2</td>
+                                              <td class="right">14</td>
+                                           </tr>
+                                           <tr>
+                                              <td>8</td>
+                                              <td class="left">ГКС+Металлургтранс</td>
+                                              <td>9</td>
+                                              <td class="right">16</td>
+                                           </tr>
+                                           <tr>
+                                              <td>9</td>
+                                              <td class="left">ОАО «МОГИЛЕВЛИФТМАШ»</td>
+                                              <td>7</td>
+                                              <td class="right">18</td>
+                                           </tr>
+                                           <tr>
+                                              <td>10</td>
+                                              <td class="left">ОАО «РМЗ»</td>
+                                              <td>14</td>
+                                              <td class="right">20</td>
+                                           </tr>
+                                           <tr>
+                                              <td>11</td>
+                                              <td class="left">ОАО «МПЗ»</td>
+                                              <td>16</td>
+                                              <td class="right">22</td>
+                                           </tr>
+                                           <tr>
+                                              <td>12</td>
+                                              <td class="left">Сборная унитарных предприятий «РАЗАМ!»</td>
+                                              <td>15</td>
+                                              <td class="right">24</td>
+                                           </tr>
+                                           <tr>
+                                              <td>12</td>
+                                              <td class="left">ОАО «ПОЛЕСЬЕ-ЭЛЕКТРОМАШ</td>
+                                              <td>10</td>
+                                              <td class="right">24</td>
+                                           </tr>
+                                           <tr>
+                                              <td>14</td>
+                                              <td class="left">ОАО «MМЗ»</td>
+                                              <td>11</td>
+                                              <td class="right">28</td>
+                                           </tr>
+                                           <tr>
+                                              <td>15</td>
+                                              <td class="left">ЗУБРЫ заводоуправление</td>
+                                              <td>1</td>
+                                              <td class="right">30</td>
+                                           </tr>
+                                           <tr>
+                                              <td>16</td>
+                                              <td class="left">СИНИЕ ЯСТРЕБЫ «ЛЕГМАШ»</td>
+                                              <td>4</td>
+                                              <td class="right">32</td>
+                                           </tr>
+          
+                                        </tbody>
+                                     </table>
+                                </li>
+
+                                <!--Вело-ориентирование-->
+                                <li id="tourism_cycling" class="tabs-content__items">
+                                    <table>
+                                        <thead>
+                                           <tr>
+                                              <th>Место</th>
+                                              <th>Название команды</th>
+                                              <th>Порядок по жеребьевке</th>
+                                              <th class="right">Кол-во балов</th>
+                                           </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                              <td>1</td>
+                                              <td class="left"><i class="first fas fa-medal"></i>VOLAT «МЗКТ»</td>
+                                              <td>6</td>
+                                              <td class="right">2</td>
+                                           </tr>
+                                           <tr>
+                                              <td>2</td>
+                                              <td class="left"><i class="second fas fa-medal"></i>СТАЛЬ</td>
+                                              <td>2</td>
+                                              <td class="right">4</td>
+                                           </tr>
+                                           <tr>
+                                              <td>3</td>
+                                              <td class="left"><i class="third fas fa-medal"></i>BY.CORD</td>
+                                              <td>10</td>
+                                              <td class="right">6</td>
+                                           </tr>
+                                           <tr>
+                                              <td>4</td>
+                                              <td class="left">ОАО «MAЗ»</td>
+                                              <td>1</td>
+                                              <td class="right">8</td>
+                                           </tr>
+                                           <tr>
+                                              <td>5</td>
+                                              <td class="left">ПРОКАТ</td>
+                                              <td>5</td>
+                                              <td class="right">10</td>
+                                           </tr>
+                                           <tr>
+                                              <td>6</td>
+                                              <td class="left">ЗУБРЫ заводоуправление</td>
+                                              <td>11</td>
+                                              <td class="right">12</td>
+                                           </tr>
+                                           <tr>
+                                              <td>7</td>
+                                              <td class="left">ОАО «МОГИЛЕВЛИФТМАШ»</td>
+                                              <td>4</td>
+                                              <td class="right">14</td>
+                                           </tr>
+                                           <tr>
+                                              <td>8</td>
+                                              <td class="left">EMERGENCY вспомогательные цеха </td>
+                                              <td>13</td>
+                                              <td class="right">16</td>
+                                           </tr>
+                                           <tr>
+                                              <td>9</td>
+                                              <td class="left">Сборная унитарных предприятий «РАЗАМ!»</td>
+                                              <td>12</td>
+                                              <td class="right">18</td>
+                                           </tr>
+                                           <tr>
+                                              <td>10</td>
+                                              <td class="left">ОАО «Белвторчермет»</td>
+                                              <td>3</td>
+                                              <td class="right">20</td>
+                                           </tr>
+                                           <tr>
+                                              <td>11</td>
+                                              <td class="left">ОАО «МПЗ»</td>
+                                              <td>15</td>
+                                              <td class="right">22</td>
+                                           </tr>
+                                           <tr>
+                                              <td>12</td>
+                                              <td class="left">ОАО «MМЗ»</td>
+                                              <td>14</td>
+                                              <td class="right">24</td>
+                                           </tr>
+                                           <tr>
+                                              <td>13</td>
+                                              <td class="left">ОАО «РМЗ»</td>
+                                              <td>8</td>
+                                              <td class="right">26</td>
+                                           </tr>
+                                           <tr>
+                                              <td>14</td>
+                                              <td class="left">ГКС+Металлургтранс</td>
+                                              <td>16</td>
+                                              <td class="right">28</td>
+                                           </tr>
+                                           <tr>
+                                              <td>15</td>
+                                              <td class="left">ОАО «ПОЛЕСЬЕ-ЭЛЕКТРОМАШ</td>
+                                              <td>7</td>
+                                              <td class="right">30</td>
+                                           </tr>
+                                           <tr>
+                                              <td>16</td>
+                                              <td class="left">СИНИЕ ЯСТРЕБЫ «ЛЕГМАШ»</td>
+                                              <td>9</td>
+                                              <td class="right">32</td>
+                                           </tr>
+                                        </tbody>
+                                     </table>
+                                </li>
+
+                                <!--Техника пешеходного туризма-->
+                                <li id="tourism_hiking_technology" class="tabs-content__items">
+                                    <table>
+                                        <thead>
+                                           <tr>
+                                              <th>Место</th>
+                                              <th>Название команды</th>
+                                              <th>Порядок по жеребьевке</th>
+                                              <th class="right">Кол-во балов</th>
+                                           </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                              <td>1</td>
+                                              <td class="left"><i class="first fas fa-medal"></i>VOLAT «МЗКТ»</td>
+                                              <td>14</td>
+                                              <td class="right">2</td>
+                                           </tr>
+                                           <tr>
+                                              <td>2</td>
+                                              <td class="left"><i class="second fas fa-medal"></i>Сборная унитарных
+                                                 предприятий «РАЗАМ!»</td>
+                                              <td>11</td>
+                                              <td class="right">4</td>
+                                           </tr>
+                                           <tr>
+                                              <td>3</td>
+                                              <td class="left"><i class="third fas fa-medal"></i>СТАЛЬ</td>
+                                              <td>5</td>
+                                              <td class="right">6</td>
+                                           </tr>
+                                           <tr>
+                                              <td>4</td>
+                                              <td class="left">ПРОКАТ</td>
+                                              <td>2</td>
+                                              <td class="right">8</td>
+                                           </tr>
+                                           <tr>
+                                              <td>5</td>
+                                              <td class="left">ОАО «MAЗ»</td>
+                                              <td>10</td>
+                                              <td class="right">10</td>
+                                           </tr>
+                                           <tr>
+                                              <td>6</td>
+                                              <td class="left">ОАО «МПЗ»</td>
+                                              <td>6</td>
+                                              <td class="right">12</td>
+                                           </tr>
+                                           <tr>
+                                              <td>7</td>
+                                              <td class="left">ЗУБРЫ заводоуправление</td>
+                                              <td>9</td>
+                                              <td class="right">14</td>
+                                           </tr>
+                                           <tr>
+                                              <td>8</td>
+                                              <td class="left">ОАО «Белвторчермет»</td>
+                                              <td>3</td>
+                                              <td class="right">16</td>
+                                           </tr>
+                                           <tr>
+                                              <td>9</td>
+                                              <td class="left">BY.CORD</td>
+                                              <td>7</td>
+                                              <td class="right">18</td>
+                                           </tr>
+                                           <tr>
+                                              <td>10</td>
+                                              <td class="left">EMERGENCY вспомогательные цеха </td>
+                                              <td>8</td>
+                                              <td class="right">20</td>
+                                           </tr>
+                                           <tr>
+                                              <td>11</td>
+                                              <td class="left">ОАО «РМЗ»</td>
+                                              <td>12</td>
+                                              <td class="right">22</td>
+                                           </tr>
+                                           <tr>
+                                              <td>15</td>
+                                              <td class="left">ГКС+Металлургтранс</td>
+                                              <td>16</td>
+                                              <td class="right">30</td>
+                                           </tr>
+                                           <tr>
+                                              <td>15</td>
+                                              <td class="left">ОАО «MМЗ»</td>
+                                              <td>13</td>
+                                              <td class="right">30</td>
+                                           </tr>
+                                           <tr>
+                                              <td>15</td>
+                                              <td class="left">ОАО «ПОЛЕСЬЕ-ЭЛЕКТРОМАШ</td>
+                                              <td>4</td>
+                                              <td class="right">30</td>
+                                           </tr>
+                                           <tr>
+                                              <td>15</td>
+                                              <td class="left">ОАО «МОГИЛЕВЛИФТМАШ»</td>
+                                              <td>15</td>
+                                              <td class="right">30</td>
+                                           </tr>
+                                           <tr>
+                                              <td>16</td>
+                                              <td class="left">СИНИЕ ЯСТРЕБЫ «ЛЕГМАШ»</td>
+                                              <td>1</td>
+                                              <td class="right">32</td>
+                                           </tr>
+          
+                                        </tbody>
+                                     </table>
+                                </li>
+
+                                <!--Туристический маршрут-->
+                                <li id="tourism_tourist_route" class="tabs-content__items">
+                                    <table>
+                                        <thead>
+                                           <tr>
+                                              <th>Место</th>
+                                              <th>Название команды</th>
+                                              <th>Порядок по жеребьевке</th>
+                                              <th class="right">Кол-во балов</th>
+                                           </tr>
+                                        </thead>
+                                        <tbody>
+                                           <tr>
+                                              <td>1</td>
+                                              <td class="left"><i class="first fas fa-medal"></i>VOLAT «МЗКТ»</td>
+                                              <td>6</td>
+                                              <td class="right">2</td>
+                                           </tr>
+                                           <tr>
+                                              <td>2</td>
+                                              <td class="left"><i class="second fas fa-medal"></i>ОАО «МПЗ»</td>
+                                              <td>11</td>
+                                              <td class="right">4</td>
+                                           </tr>
+                                           <tr>
+                                              <td>3</td>
+                                              <td class="left"><i class="third fas fa-medal"></i>ОАО «MAЗ»</td>
+                                              <td>5</td>
+                                              <td class="right">6</td>
+                                           </tr>
+                                           <tr>
+                                              <td>4</td>
+                                              <td class="left">ПРОКАТ</td>
+                                              <td>7</td>
+                                              <td class="right">8</td>
+                                           </tr>
+                                           <tr>
+                                              <td>5</td>
+                                              <td class="left">СТАЛЬ</td>
+                                              <td>3</td>
+                                              <td class="right">10</td>
+                                           </tr>
+                                           <tr>
+                                              <td>6</td>
+                                              <td class="left">ЗУБРЫ заводоуправление</td>
+                                              <td>1</td>
+                                              <td class="right">12</td>
+                                           </tr>
+                                           <tr>
+                                              <td>7</td>
+                                              <td class="left">EMERGENCY вспомогательные цеха </td>
+                                              <td>9</td>
+                                              <td class="right">14</td>
+                                           </tr>
+                                           <tr>
+                                              <td>8</td>
+                                              <td class="left">BY.CORD</td>
+                                              <td>8</td>
+                                              <td class="right">16</td>
+                                           </tr>
+                                           <tr>
+                                              <td>9</td>
+                                              <td class="left">ОАО «Белвторчермет»</td>
+                                              <td>12</td>
+                                              <td class="right">18</td>
+                                           </tr>
+                                           <tr>
+                                              <td>10</td>
+                                              <td class="left">Сборная унитарных предприятий «РАЗАМ!»</td>
+                                              <td>13</td>
+                                              <td class="right">20</td>
+                                           </tr>
+                                           <tr>
+                                              <td>11</td>
+                                              <td class="left">ОАО «РМЗ»</td>
+                                              <td>2</td>
+                                              <td class="right">22</td>
+                                           </tr>
+                                           <tr>
+                                              <td>12</td>
+                                              <td class="left">ОАО «МОГИЛЕВЛИФТМАШ»</td>
+                                              <td>16</td>
+                                              <td class="right">24</td>
+                                           </tr>
+                                           <tr>
+                                              <td>13</td>
+                                              <td class="left">ГКС+Металлургтранс</td>
+                                              <td>10</td>
+                                              <td class="right">26</td>
+                                           </tr>
+                                           <tr>
+                                              <td>14</td>
+                                              <td class="left">ОАО «MМЗ»</td>
+                                              <td>4</td>
+                                              <td class="right">28</td>
+                                           </tr>
+                                           <tr>
+                                              <td>15</td>
+                                              <td class="left">ОАО «ПОЛЕСЬЕ-ЭЛЕКТРОМАШ</td>
+                                              <td>15</td>
+                                              <td class="right">30</td>
+                                           </tr>
+                                           <tr>
+                                              <td>16</td>
+                                              <td class="left">СИНИЕ ЯСТРЕБЫ «ЛЕГМАШ»</td>
+                                              <td>14</td>
+                                              <td class="right">32</td>
+                                           </tr>
+                                        </tbody>
+                                     </table>
+                                </li>
+                            </ul>
+                            <!-- /.tabs-content__list -->
+                            
+                            
+                        </div>
+                        <!-- /.tabs-wrap -->
+                    </div>
                     <!-- /.accordion-body -->
                 </li>
 

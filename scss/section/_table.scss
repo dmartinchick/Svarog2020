@@ -5,7 +5,7 @@
     &-bg{
         position: absolute;
         left: 0;
-        z-index: 0;
+        z-index: -1;
         top: 125vh;
 
         &__compass{
@@ -48,7 +48,7 @@
                     }
                 }
                 &.active + .accordion-body{
-                    height: 40em;
+                    height: 50em;
                 }
 
             }
@@ -68,6 +68,8 @@
                     table{
                         width: 100%;
                         height: auto;
+                        border-spacing: 0;
+                        empty-cells: hide;
                         font-size: 1.2em;
                         text-align: center;
                         position: relative;
@@ -78,23 +80,14 @@
                             th{
                                 padding-top: 0.5em;
                                 padding-bottom: .5em;
-                                border-right: .5px solid $dark-strong;
-                                
-                                &:last-child{
-                                    border-right: 0px;
-                                }
+                                border-bottom: 1px solid $dark-strong;
                             }
                         }
-
                         tbody{
-                            tr{
-                                &:nth-child(odd){
-                                    background: $color-2;
-                                }
-                            }
                             td{
-                                //border-right: .5px solid $dark-strong;
-                                padding: .25em .5em;
+                                padding: .5em .5em;
+                                border-bottom: 1px solid rgba($color-2, 0.5);
+                                transition: all .5s linear;
                             }
                         }
 
@@ -118,6 +111,62 @@
                         .right{
                             text-align: right;
                         }
+                    }
+                }
+            }
+            
+        }
+
+        .tabs-wrap{
+            display: flex;
+            flex-direction: column;
+
+            .tabs-name{
+                &__list{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                &__items{
+                    flex-grow: 1;
+                    font-size: 1.2em;
+                    cursor: pointer;
+                    padding: .5em;
+                    display: inline-block;
+                    text-align: center;
+                    border-bottom: 1px solid $color-2;
+
+                    &.active{
+                        border-top: 2px solid $lime;
+                        border-left: 1px solid $color-2;
+                        border-right: 1px solid $color-2;
+                        border-bottom: 0px transparent;
+                        border-top-left-radius: 3px;
+                        border-top-right-radius: 3px;
+                    }
+
+                    
+                    label{
+                        color: $dark-light;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: #000;
+                        }
+                    }
+                    input{
+                        display: none;
+                    }
+                }
+            }
+            .tabs-content{
+                &__list{
+                    list-style: none;
+                    //border-top: 1px solid $color-2;
+
+                    table{
+                        margin-top: 1em;
                     }
                 }
             }
