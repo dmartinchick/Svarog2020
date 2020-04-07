@@ -82,10 +82,25 @@ $(document).ready(function () {
 		resize = false;
     }
     
-    //table
+    //table accordion
     $(".accordion-header").click(function (e) { 
 		e.preventDefault();
 		$(".accordion-header").removeClass("active");
 		$(this).toggleClass("active");
+	});
+
+	//tabs
+	$('.tabs-name__items').click(function (e) { 
+		e.preventDefault();
+		var tabId = $(this).attr('id');
+		
+		//работа с tabs-name
+		$('.tabs-name__items').removeClass('active');
+		$(this).fadeIn().addClass('active');
+		
+		//работа с tabs-content
+		$('.tabs-content__items').removeClass('active');
+		$('#'+tabId+'.tabs-content__items').addClass('active');
+		
 	});
 });

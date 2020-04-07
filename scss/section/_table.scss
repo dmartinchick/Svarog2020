@@ -48,7 +48,7 @@
                     }
                 }
                 &.active + .accordion-body{
-                    height: 50em;
+                    height: 55em;
                 }
 
             }
@@ -121,6 +121,7 @@
             display: flex;
             flex-direction: column;
 
+            //табы
             .tabs-name{
                 &__list{
                     list-style: none;
@@ -130,12 +131,18 @@
                 }
                 &__items{
                     flex-grow: 1;
-                    font-size: 1.2em;
+                    font-size: 1.6em;
                     cursor: pointer;
                     padding: .5em;
                     display: inline-block;
                     text-align: center;
                     border-bottom: 1px solid $color-2;
+
+                    p{
+                        i{
+                            margin-right: 1em;
+                        }
+                    }
 
                     &.active{
                         border-top: 2px solid $lime;
@@ -144,10 +151,22 @@
                         border-bottom: 0px transparent;
                         border-top-left-radius: 3px;
                         border-top-right-radius: 3px;
+                        
+                        p{
+                            color: #000;
+                        }
                     }
 
-                    
-                    label{
+                    &:hover{
+                        border-top: 2px solid $lime;
+                        border-left: 1px solid $color-2;
+                        border-right: 1px solid $color-2;
+                        border-bottom: 0px transparent;
+                        border-top-left-radius: 3px;
+                        border-top-right-radius: 3px;
+                    }
+
+                    p{
                         color: $dark-light;
                         cursor: pointer;
 
@@ -160,13 +179,22 @@
                     }
                 }
             }
+
+            //таблицы
             .tabs-content{
                 &__list{
                     list-style: none;
-                    //border-top: 1px solid $color-2;
-
+                    
                     table{
                         margin-top: 1em;
+                    }
+                }
+
+                &__items{
+                    display: none;
+
+                    &.active{
+                        display: block;
                     }
                 }
             }
