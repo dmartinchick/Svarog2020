@@ -5,7 +5,7 @@
     &-bg{
         position: absolute;
         left: 0;
-        z-index: 0;
+        z-index: -1;
         top: 125vh;
 
         &__compass{
@@ -16,8 +16,183 @@
     }
 
     &-content{
-        background-color: #fff;
         margin-top: 2em;
+        z-index: 1;
+        border: 1px solid $dark-light;
+
+        .accordion-item{
+            list-style: none;
+            background-color: #fff;
+
+            .accordion-header{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 15px;
+                color: $dark-strong;    
+                position: relative;
+                cursor: pointer;
+                font-size: 1.6em;
+                border-top: .5px solid $dark-light;
+                
+                &__dropdown{
+                    transition: all .5s ease;
+                }
+                &:hover,
+                &.active{
+                    color: #000;
+                }
+                &.active{
+                    .accordion-header__dropdown{
+                        transform: scale(-1,-1);
+                    }
+                }
+                &.active + .accordion-body{
+                    height: 55em;
+                }
+
+            }
+
+            .accordion-body{
+                width: 100%;
+                height: 0;
+                transition: all 0.3s ease;
+                background: #fff;
+                overflow: hidden;
+
+                .tabs-wrap{
+                    margin: 1em 2em;
+                    display: flex;
+                    justify-content: center;
+
+                    table{
+                        width: 100%;
+                        height: auto;
+                        border-spacing: 0;
+                        empty-cells: hide;
+                        font-size: 1.2em;
+                        text-align: center;
+                        position: relative;
+                        border: 1xp solid $dark-strong;
+
+                        thead{
+                            
+                            th{
+                                padding-top: 0.5em;
+                                padding-bottom: .5em;
+                                border-bottom: 1px solid $dark-strong;
+                            }
+                        }
+                        tbody{
+                            td{
+                                padding: .5em .5em;
+                                border-bottom: 1px solid rgba($color-2, 0.5);
+                                transition: all .5s linear;
+                            }
+                        }
+
+                        .first,
+                        .second,
+                        .third{
+                            margin-right: 1em;
+                        }
+                        .first{
+                            color: $gold;
+                        }
+                        .second{
+                            color: $silver;
+                        }
+                        .third{
+                            color: $bronze;
+                        }
+                        .left{
+                            text-align: left;
+                        }
+                        .right{
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .tabs-wrap{
+            display: flex;
+            flex-direction: column;
+
+            //табы
+            .tabs-name{
+                &__list{
+                    list-style: none;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+                &__items{
+                    flex-grow: 1;
+                    font-size: 1.6em;
+                    cursor: pointer;
+                    padding: .5em;
+                    display: inline-block;
+                    text-align: center;
+                    border-bottom: 1px solid $color-2;
+
+                    p{
+                        i{
+                            margin-right: 1em;
+                        }
+                    }
+
+                    &.active{
+                        border-top: 2px solid $lime;
+                        border-left: 1px solid $color-2;
+                        border-right: 1px solid $color-2;
+                        border-bottom: 0px transparent;
+                        border-top-left-radius: 3px;
+                        border-top-right-radius: 3px;
+                        
+                        p{
+                            color: #000;
+                        }
+                    }
+
+                    p{
+                        color: $dark-light;
+                        cursor: pointer;
+
+                        &:hover{
+                            color: #000;
+                        }
+                    }
+                    input{
+                        display: none;
+                    }
+                }
+            }
+
+            //таблицы
+            .tabs-content{
+                &__list{
+                    list-style: none;
+                    
+                    table{
+                        margin-top: 1em;
+                    }
+                }
+
+                &__items{
+                    display: none;
+                    transition: all 0.5s ease-in-out;
+
+                    &.active{
+                        width: 100%;
+                        display: block;
+                    }
+                }
+            }
+            
+        }
 
     }
 }

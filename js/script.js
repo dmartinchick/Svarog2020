@@ -82,13 +82,25 @@ $(document).ready(function () {
 		resize = false;
     }
     
-    //table
+    //table accordion
     $(".accordion-header").click(function (e) { 
 		e.preventDefault();
-		var select=$(this).attr("id");
-		//alert(select+".acc");
-		$(".active").removeClass("active");
-		$("#"+select+".accordion-body").addClass("active");
-		$("#"+select+".accordion-header").addClass("active");
+		$(".accordion-header").removeClass("active");
+		$(this).toggleClass("active");
+	});
+
+	//tabs
+	$('.tabs-name__items').click(function (e) { 
+		e.preventDefault();
+		var tabId = $(this).attr('id');
+		
+		//работа с tabs-name
+		$('.tabs-name__items').removeClass('active');
+		$(this).addClass('active');
+		
+		//работа с tabs-content
+		$('.tabs-content__items').removeClass('active');
+		$('.tabs-content__items'+'#'+tabId).addClass('active');
+		
 	});
 });
