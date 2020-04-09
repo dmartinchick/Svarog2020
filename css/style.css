@@ -955,15 +955,6 @@ body {
   color: #000;
 }
 
-.table-content .tabs-wrap .tabs-name__items:hover {
-  border-top: 2px solid #C0E86A;
-  border-left: 1px solid #a5c4bc;
-  border-right: 1px solid #a5c4bc;
-  border-bottom: 0px transparent;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
-}
-
 .table-content .tabs-wrap .tabs-name__items p {
   color: #707070;
   cursor: pointer;
@@ -987,9 +978,12 @@ body {
 
 .table-content .tabs-wrap .tabs-content__items {
   display: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .table-content .tabs-wrap .tabs-content__items.active {
+  width: 100%;
   display: block;
 }
 

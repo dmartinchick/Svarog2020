@@ -96,11 +96,11 @@ $(document).ready(function () {
 		
 		//работа с tabs-name
 		$('.tabs-name__items').removeClass('active');
-		$(this).fadeIn().addClass('active');
+		$(this).addClass('active');
 		
 		//работа с tabs-content
 		$('.tabs-content__items').removeClass('active');
-		$('#'+tabId+'.tabs-content__items').addClass('active');
+		$('.tabs-content__items'+'#'+tabId).addClass('active');
 		
 	});
 });
