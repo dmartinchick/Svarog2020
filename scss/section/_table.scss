@@ -7,7 +7,7 @@
         left: 0;
         z-index: -1;
         top: 125vh;
-
+        
         &__compass{
             transform-origin: left top;
             transform: scale(0.5);
@@ -19,6 +19,7 @@
         margin-top: 2em;
         z-index: 1;
         border: 1px solid $dark-light;
+        filter: drop-shadow(5px 5px 10px rgba($dark-strong,0.5));
 
         .accordion-item{
             list-style: none;
