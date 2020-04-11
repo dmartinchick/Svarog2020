@@ -832,7 +832,7 @@ body {
 }
 
 .table-content .accordion-item .accordion-header.active + .accordion-body {
-  height: 55em;
+  height: 53em;
 }
 
 .table-content .accordion-item .accordion-body {

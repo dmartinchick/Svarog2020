@@ -81,8 +81,8 @@ $(document).ready(function () {
 
 		resize = false;
     }
-    
-    //table accordion
+	
+	//table accordion
     $('.accordion-header').click(function (e) { 
 		e.preventDefault();
 
