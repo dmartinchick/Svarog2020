@@ -789,6 +789,8 @@ body {
   margin-top: 2em;
   z-index: 1;
   border: 1px solid #707070;
+  -webkit-filter: drop-shadow(5px 5px 10px rgba(72, 85, 80, 0.5));
+          filter: drop-shadow(5px 5px 10px rgba(72, 85, 80, 0.5));
 }
 
 .table-content .accordion-item {
