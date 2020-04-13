@@ -65,7 +65,7 @@
                 width: 1em;
                 height: 1em;
                 border-radius: 50%;
-                background: $lime;
+                background: #fff;
                 border: 1px solid $dark-strong;
             }
         }
@@ -82,7 +82,7 @@
                 width: 1em;
                 height: 1em;
                 border-radius: 50%;
-                background: $lime;
+                background: #fff;
                 border: 1px solid $dark-strong;
             }
         }
@@ -135,7 +135,7 @@
                 color: $dark-strong;
                 padding: .5em 1em;
                 border: 1px solid $lime;
-                transition: all .5s ease-in-out;
+                transition: all .3s ease-in-out;
                 border-radius: .2em;
 
                 &:hover{

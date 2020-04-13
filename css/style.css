@@ -1073,7 +1073,7 @@ body {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background: #C0E86A;
+  background: #fff;
   border: 1px solid #485550;
 }
 
@@ -1094,7 +1094,7 @@ body {
   width: 1em;
   height: 1em;
   border-radius: 50%;
-  background: #C0E86A;
+  background: #fff;
   border: 1px solid #485550;
 }
 
@@ -1156,8 +1156,8 @@ body {
   color: #485550;
   padding: .5em 1em;
   border: 1px solid #C0E86A;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
   border-radius: .2em;
 }
 
