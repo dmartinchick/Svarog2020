@@ -149,21 +149,6 @@
             margin-top: 2em;
             width: 100%;
             position: relative;
-
-            a{
-                font-size: 1.6em;
-                text-decoration: none;
-                color: $dark-strong;
-                padding: .5em 1em;
-                border: 1px solid $lime;
-                transition: all .3s ease-in-out;
-                border-radius: .2em;
-
-                &:hover{
-                    color: #000;
-                    background-color: $lime;
-                }
-            }
         }
     }
     span{
@@ -171,7 +156,122 @@
     }
 }
 
+//описание стиля кнопок
+.btn,.timeline-card__action a{
+    font-size: 1.6em;
+    text-decoration: none;
+    color: $dark-strong;
+    padding: .5em 1em;
+    border: 1px solid $lime;
+    transition: all .3s ease-in-out;
+    border-radius: .2em;
+
+    &:hover{
+        color: #000;
+        background-color: $lime;
+    }
+}
+
 .events-wrap{
     position: relative;
 
+}
+
+.overlay{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(#000,.75);
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s ease-in-out;
+    max-height: 100vh;
+    z-index: 3;
+    &.open{
+        opacity: 1;
+        pointer-events: inherit;
+    }
+    
+}
+
+.modal-content{
+    position: fixed;
+    width: 70vw;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2em;
+    border-radius: .5em;
+    background: white;
+    border: 1px solid #000;
+    box-shadow: 0px 1px 10px rgba(white, 0.3);
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+    overflow-y: auto;
+    z-index: 4;
+
+    display: flex;//для отображения должно быть flex
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+
+    .modal{
+        &-info{
+            display: flex;
+            flex-direction: row;
+
+            &__img{
+                display: block;
+                width: 40%;
+                height: auto;
+                margin-right: 2em;
+                img{
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                }
+            }
+
+            &__text{
+                width: 60%;
+                @include Helvetica-light;
+                
+                span{
+                    @include Helvetica-bold;
+                }
+                p{
+                    font-size: 16px;
+                    margin-bottom: 10px;
+                }
+            }
+            &__name{
+                font-size: 24px;
+                @include Helvetica-bold;
+                margin-bottom: 20px !important;
+            }
+            
+        }
+
+        &-action{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    /*
+    &.open{
+        opacity: 1;
+        dis
+        pointer-events: inherit;
+        &.content{
+            transform: translate(0,-0px);
+            opacity: 1;
+        }
+    }
+    &content{
+        transform: translate(0, -1em);
+        opacity: 0;
+        transition: .3s ease-in-out;
+    }*/
 }
