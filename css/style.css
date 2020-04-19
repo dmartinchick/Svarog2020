@@ -463,7 +463,7 @@ body {
           transform: transition(opacity 0.3s 0s, visibility 0s 0.3s);
 }
 
-.cd-modal .modal-content {
+.cd-modal .modal-content-ink {
   height: 80vh;
   position: relative;
   display: -webkit-box;
@@ -478,7 +478,7 @@ body {
           align-items: center;
 }
 
-.cd-modal .modal-content .modal-logo {
+.cd-modal .modal-content-ink .modal-logo {
   -webkit-transform: scale(0.75);
           transform: scale(0.75);
   -webkit-transform-origin: top;
@@ -495,23 +495,23 @@ body {
           align-items: center;
 }
 
-.cd-modal .modal-content .modal-logo__text {
+.cd-modal .modal-content-ink .modal-logo__text {
   font-family: 'Balkara Free Condensed',serif;
   color: #F4F6F0;
   font-size: 1.75em;
 }
 
-.cd-modal .modal-content .modal-logo__text h1 {
+.cd-modal .modal-content-ink .modal-logo__text h1 {
   margin: 0;
 }
 
-.cd-modal .modal-content .modal-logo__text h1 span {
+.cd-modal .modal-content-ink .modal-logo__text h1 span {
   font-family: 'Helvetica Neue Cyr Ultra Light',sans-serif;
   font-size: 1.5em;
   color: #C0E86A;
 }
 
-.cd-modal .modal-content .modal-logo::after {
+.cd-modal .modal-content-ink .modal-logo::after {
   content: '';
   display: block;
   height: 1px;
@@ -520,7 +520,7 @@ body {
   margin-top: 2.5em;
 }
 
-.cd-modal .modal-content .modal-menu__list {
+.cd-modal .modal-content-ink .modal-menu__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -533,13 +533,13 @@ body {
           align-items: center;
 }
 
-.cd-modal .modal-content .modal-menu__item {
+.cd-modal .modal-content-ink .modal-menu__item {
   position: relative;
   list-style: none;
   margin-top: 3em;
 }
 
-.cd-modal .modal-content .modal-menu__item::after {
+.cd-modal .modal-content-ink .modal-menu__item::after {
   content: '';
   position: absolute;
   left: -20px;
@@ -556,15 +556,15 @@ body {
           transform: rotate(5deg);
 }
 
-.cd-modal .modal-content .modal-menu__item.active a {
+.cd-modal .modal-content-ink .modal-menu__item.active a {
   color: #C0E86A;
 }
 
-.cd-modal .modal-content .modal-menu__item:hover::after {
+.cd-modal .modal-content-ink .modal-menu__item:hover::after {
   width: 140%;
 }
 
-.cd-modal .modal-content .modal-menu__item a {
+.cd-modal .modal-content-ink .modal-menu__item a {
   text-decoration: none;
   color: #F4F6F0;
   font-size: 2em;
@@ -572,7 +572,7 @@ body {
   font-family: 'Helvetica Neue Cyr Light',sans-serif;
 }
 
-.cd-modal .modal-content .modal-menu__item:nth-child(1) {
+.cd-modal .modal-content-ink .modal-menu__item:nth-child(1) {
   margin-top: 0;
 }
 
