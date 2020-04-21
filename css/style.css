@@ -190,7 +190,7 @@ body {
   top: 1.5em;
   width: 0;
   height: 100%;
-  background: url(../../img/other/ink-separation-dark-strong.png);
+  background: url(../img/other/ink-separation-dark-strong.png);
   background-size: cover;
   -webkit-transform-origin: left;
           transform-origin: left;
@@ -459,7 +459,7 @@ body {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background: #402f44 url(../../img/other/ink/modal-bg.jpg) no-repeat center center;
+  background: #402f44 url(../img/other/ink/modal-bg.jpg) no-repeat center center;
   background-size: cover;
   opacity: 0;
   visibility: hidden;
@@ -550,7 +550,7 @@ body {
   top: 1.4em;
   width: 0;
   height: 100%;
-  background: url(../../img/other/ink/ink-lime.png);
+  background: url(../img/other/ink/ink-lime.png);
   background-size: cover;
   -webkit-transform-origin: left;
           transform-origin: left;
@@ -1433,23 +1433,23 @@ body {
 }
 
 .history-gallery__items:nth-child(1) {
-  background-image: url(../../img/history/2015.jpg);
+  background-image: url(../img/history/2015.jpg);
 }
 
 .history-gallery__items:nth-child(2) {
-  background-image: url(../../img/history/2016.jpg);
+  background-image: url(../img/history/2016.jpg);
 }
 
 .history-gallery__items:nth-child(3) {
-  background-image: url(../../img/history/2017.jpg);
+  background-image: url(../img/history/2017.jpg);
 }
 
 .history-gallery__items:nth-child(4) {
-  background-image: url(../../img/history/2018.jpg);
+  background-image: url(../img/history/2018.jpg);
 }
 
 .history-gallery__items:nth-child(5) {
-  background-image: url(../../img/history/2019.jpg);
+  background-image: url(../img/history/2019.jpg);
 }
 
 .year-bg {

@@ -7,7 +7,7 @@
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-	background: $color-4 url(../../img/other/ink/modal-bg.jpg) no-repeat center center;
+	background: $color-4 url(../img/other/ink/modal-bg.jpg) no-repeat center center;
 	background-size: cover;
 	opacity: 0;
     visibility: hidden;
@@ -68,7 +68,7 @@
                     top: 1.4em;
                     width: 0;
                     height: 100%;
-                    background: url(../../img/other/ink/ink-lime.png);
+                    background: url(../img/other/ink/ink-lime.png);
                     background-size:cover;
                     transform-origin: left;
                     transition: .3s ease-in;
