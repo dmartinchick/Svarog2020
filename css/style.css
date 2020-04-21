@@ -1388,6 +1388,14 @@ body {
 }
 
 .history-gallery__items .year-text {
+  display: none;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  float: right;
+  margin: 2em;
+  padding: 1em;
+  width: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
   font-family: 'Helvetica Neue Cyr Light',sans-serif;
   color: #fff;
 }
@@ -1395,6 +1403,11 @@ body {
 .history-gallery__items .year-text__name {
   font-family: 'Helvetica Neue Cyr Bold', sans-serif;
   font-size: 1.6em;
+  margin-bottom: 10px;
+}
+
+.history-gallery__items .year-text-discription {
+  font-size: 1.4em;
 }
 
 .history-gallery__items:hover, .history-gallery__items.active {
@@ -1413,6 +1426,10 @@ body {
   font-size: 3em;
   -webkit-transform: rotate(0);
           transform: rotate(0);
+}
+
+.history-gallery__items:hover .year-text, .history-gallery__items.active .year-text {
+  display: block;
 }
 
 .history-gallery__items:nth-child(1) {
@@ -1437,6 +1454,10 @@ body {
 
 .year-bg {
   background-size: cover;
+}
+
+.year-place {
+  display: none;
 }
 
 .year-place__items {
