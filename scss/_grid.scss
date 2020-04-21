@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 @media screen and(min-width: 1200px){
     .container{
         max-width: 70%;
@@ -30,4 +29,8 @@
         max-width: 90%;
         margin: auto;
     }
+}
+
+.container-fluid{
+    max-width: 100%;
 }
