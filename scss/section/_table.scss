@@ -48,11 +48,6 @@
                         transform: scale(-1,-1);
                     }
                 }
-                &.active + .accordion-body{
-                    height: 53em;
-                }
-
-
             }
 
             .accordion-body{
@@ -117,6 +112,18 @@
                 }
             }
             
+            //задаем высоту таблиц
+            &:nth-child(1).active>.accordion-body{
+                height: 48em;
+            }
+            &:nth-child(2).active>.accordion-body{
+                height: 40em;
+            }
+            &:nth-child(3).active>.accordion-body,
+            &:nth-child(4).active>.accordion-body,
+            &:nth-child(5).active>.accordion-body{
+                height: 53em;
+            }
         }
 
         .tabs-wrap{
