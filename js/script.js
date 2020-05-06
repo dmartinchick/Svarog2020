@@ -82,48 +82,49 @@ $(document).ready(function () {
 		resize = false;
     }
 	
-	//table accordion
-    $('.accordion-header').click(function (e) { 
+	//table accordion //TO DO
+	$('.accordion-header').click(function (e) { 
 		e.preventDefault();
-
-		//получение id для аккардион вкладки
-		var accID = "#"+$(this).attr('id');
-
-		//открытие аккардион вкладки
-		if ($(this).hasClass('active')==true) {
-			$(this).removeClass('active');
-		} else {
-			$('.accordion-header').removeClass('active');
-			$('.accordion-header'+accID).addClass('active');
-		}
-
-		//сброс tabs-name__items
-		$('.tabs-name__items').removeClass('active');
-		$('.tabs-name__items:eq(0)').addClass('active');
-		$('.tabs-name__items:eq(5)').addClass('active');
-		$('.tabs-name__items:eq(12)').addClass('active');
 		
-		//сброс tabs-content__items
-		$('.tabs-content__items').removeClass('active');
-		$('.tabs-content__items:eq(0)').addClass('active');
-		$('.tabs-content__items:eq(5)').addClass('active');
-		$('.tabs-content__items:eq(12)').addClass('active');
+		//получение id
+		var accID = '#'+$(this).parent().attr('id');
 
-		// table accordion tabs
-		$('.tabs-name__items').click(function (e) { 
-			e.preventDefault();
+		//открытие аккордионной вкладки
+		//проверка. Если нажали на активную вкладку, то блок соврачивается, в противном случаи открывается нужный блок
+		if ($(this).parent().hasClass('active')==true) {
+			$(this).parent().removeClass('active');
+		} else {
+			$('.accordion-item').removeClass('active');
+			$(accID).addClass('active');
 
-			//получение id для tabs вкладки
-			var tabID = "#"+$(this).attr('id');
-
-			//переключение tabs-name__items
+			//сброс tabs-name__items	
 			$('.tabs-name__items').removeClass('active');
-			$(this).addClass('active');
-
-			//перключение tabs-content__items
+			$('.tabs-name__items:eq(0)').addClass('active');
+			$('.tabs-name__items:eq(5)').addClass('active');
+			$('.tabs-name__items:eq(12)').addClass('active');
+			
+			//сброс tabs-content__items	
 			$('.tabs-content__items').removeClass('active');
-			$('.tabs-content__items'+tabID).addClass('active');
-		});
+			$('.tabs-content__items:eq(0)').addClass('active');
+			$('.tabs-content__items:eq(5)').addClass('active');
+			$('.tabs-content__items:eq(12)').addClass('active');
+
+			$('.tabs-name__items').click(function (e) { 
+				e.preventDefault();
+				
+				//получение id вкладки
+				var tabID = '#'+$(this).attr('id');
+
+				//удаление класа 'active' у вкладки и таблицы
+				$('.tabs-name__items').removeClass('active');
+				$('.tabs-content__items').removeClass('active');
+
+				//добовление класа 'active' вкладке и таблице
+				$(this).addClass('active');
+				$('.tabs-content__items'+tabID).addClass('active');
+			});
+		}
+		//конец блока else
 	});
 
 
