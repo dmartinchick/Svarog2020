@@ -55,69 +55,15 @@
                 height: 0;
                 transition: all 0.3s ease;
                 background: #fff;
-                overflow: hidden;
-
-                .tabs-wrap{
-                    margin: 1em 2em;
-                    display: flex;
-                    justify-content: center;
-
-                    table{
-                        width: 100%;
-                        height: auto;
-                        border-spacing: 0;
-                        empty-cells: hide;
-                        font-size: 1.2em;
-                        text-align: center;
-                        position: relative;
-                        border: 1xp solid $dark-strong;
-
-                        thead{
-                            
-                            th{
-                                padding-top: 0.5em;
-                                padding-bottom: .5em;
-                                border-bottom: 1px solid $dark-strong;
-                            }
-                        }
-                        tbody{
-                            td{
-                                padding: .5em .5em;
-                                border-bottom: 1px solid rgba($color-2, 0.5);
-                                transition: all .5s linear;
-                            }
-                        }
-
-                        .first,
-                        .second,
-                        .third{
-                            margin-right: 1em;
-                        }
-                        .first{
-                            color: $gold;
-                        }
-                        .second{
-                            color: $silver;
-                        }
-                        .third{
-                            color: $bronze;
-                        }
-                        .left{
-                            text-align: left;
-                        }
-                        .right{
-                            text-align: right;
-                        }
-                    }
-                }
+                overflow: hidden;                
             }
             
             //задаем высоту таблиц
             &:nth-child(1).active>.accordion-body{
-                height: 48em;
+                height: 49em;
             }
             &:nth-child(2).active>.accordion-body{
-                height: 40em;
+                height: 41.5em;
             }
             &:nth-child(3).active>.accordion-body,
             &:nth-child(4).active>.accordion-body,
@@ -127,8 +73,10 @@
         }
 
         .tabs-wrap{
+            margin: 1em 2em;
             display: flex;
             flex-direction: column;
+            justify-content: center;  
 
             //табы
             .tabs-name{
@@ -198,6 +146,64 @@
                         width: 100%;
                         display: block;
                     }
+                }
+            }
+
+            //оформление таблиц
+            table{
+                width: 100%;
+                height: auto;
+                border-spacing: 0;
+                empty-cells: hide;
+                font-size: 1.2em;
+                text-align: center;
+                position: relative;
+                border: 1xp solid $dark-strong;
+
+                thead{
+                    
+                    th{
+                        padding-top: 0.5em;
+                        padding-bottom: .5em;
+                        border-bottom: 1px solid $dark-strong;
+                    }
+                }
+                tbody{
+                    tr{
+                        //Убираем подчеркивание для строк в таблицах
+                        &:last-child{
+                            td{
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                    td{
+                        position: relative;
+                        padding: .5em .5em;
+                        border-bottom: 1px solid rgba($color-2, 0.5);
+                        transition: all .5s linear;
+                    }
+                }
+
+                .first,
+                .second,
+                .third{
+                    margin-right: 1em;
+                }
+                .first{
+                    color: $gold;
+                }
+                .second{
+                    color: $silver;
+                }
+                .third{
+                    color: $bronze;
+                }
+                .left{
+                    text-align: left;
+                }
+                .right{
+                    text-align: right;
                 }
             }
         }
