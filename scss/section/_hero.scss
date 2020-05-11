@@ -51,7 +51,7 @@
             align-self: center;
             //настройки анимации
             opacity: 0; //сброс для анимации
-            animation-name: fadeIn;
+            animation-name: fadeInMy;
             animation-duration:1s;
             animation-delay:2s;
             animation-fill-mode:both;
@@ -66,7 +66,7 @@
         right: 0;
         //настройки анимации
         opacity: 0; //сброс для анимации
-        animation-name: fadeIn;
+        animation-name: fadeInMy;
         animation-duration: 1s;
         animation-delay: 2.3s;
         animation-fill-mode: both;

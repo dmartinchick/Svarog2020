@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+	
     //прокурутка по якорям
     $(".navbar-menu").on("click","a", function(e){
         e.preventDefault();
@@ -174,4 +174,7 @@ $(document).ready(function () {
 		}, 350);
 		
 	});
+
+	//анимация event
+	new WOW().init(); //инициализация WOW.js
 });
